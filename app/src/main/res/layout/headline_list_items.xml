@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright Text :
+  ~ Created by Tuan on 4/3/22, 8:04 PM
+  ~  Copyright (c) 2022 . All rights reserved.
+  ~  Last modified 4/3/22, 8:04 PM
+  -->
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:elevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:text="Title" />
+
+        <TextView
+            android:id="@+id/tv_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:maxLines="1"
+            android:textColor="@color/purple_200"
+            android:textSize="22sp"
+            android:textStyle="normal"
+            tools:text="Source" />
+
+        <ImageView
+            android:id="@+id/img_headline"
+            tools:src="@drawable/ic_launcher_background"
+            android:scaleType="centerCrop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+

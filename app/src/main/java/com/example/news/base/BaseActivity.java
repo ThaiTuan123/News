@@ -1,3 +1,10 @@
+/*
+ * Copyright Text :
+ * Created by Tuan on 4/3/22, 7:38 PM
+ *  Copyright (c) 2022 . All rights reserved.
+ *  Last modified 4/3/22, 6:49 PM
+ */
+
 package com.example.news.base;
 
 import android.content.Context;

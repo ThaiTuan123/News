@@ -1,3 +1,10 @@
+/*
+ * Copyright Text :
+ * Created by Tuan on 4/3/22, 7:39 PM
+ *  Copyright (c) 2022 . All rights reserved.
+ *  Last modified 4/3/22, 6:49 PM
+ */
+
 package com.example.news.base;
 
 import android.os.Bundle;
@@ -68,12 +75,12 @@ public abstract class BaseMVVMFragment<V extends ViewBinding, VM extends BaseVie
     private void registerBaseViewModelObs() {
         viewModel.errorMessageObs.observe(getViewLifecycleOwner(), this::showToast);
 
-        viewModel.loadingObs.observe(getViewLifecycleOwner(), isLoading -> {
-            if (isLoading) {
-                ((BaseActivity) getActivity()).showLoading();
-            } else {
-                ((BaseActivity) getActivity()).hideLoading();
-            }
-        });
+//        viewModel.loadingObs.observe(getViewLifecycleOwner(), isLoading -> {
+//            if (isLoading) {
+//                ((BaseActivity) getActivity()).showLoading();
+//            } else {
+//                ((BaseActivity) getActivity()).hideLoading();
+//            }
+//        });
     }
 }
